@@ -33,28 +33,4 @@ Install MongoDB locally or create a MongoDB Atlas database. Copy `.env.example` 
 
 The `.env` file is local-only and must not be committed.
 
-## MongoDB API examples
 
-Create a book with `POST http://localhost:5000/api/v1/mongo/books`:
-
-```json
-{
-  "title": "Database Systems",
-  "author": "Abraham Silberschatz",
-  "category": "Technology",
-  "isbn": "9780073523323"
-}
-```
-
-Create a member with `POST http://localhost:5000/api/v1/mongo/members`:
-
-```json
-{
-  "name": "Aarav Patel",
-  "email": "aarav@example.com",
-  "phone": "9876543210",
-  "department": "Computer Engineering"
-}
-```
-
-The schemas return a structured `400` JSON response for missing required fields or an invalid borrowing status.
