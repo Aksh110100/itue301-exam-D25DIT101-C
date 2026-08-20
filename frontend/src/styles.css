@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.nav-link,
+button {
+  padding: 8px 14px;
+  border: 1px solid #bbbbbb;
+  background: #ffffff;
+  color: #222222;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover,
+button:hover {
+  background: #eeeeee;
+}
+
+.borrow-form {
+  display: grid;
+  max-width: 420px;
+  gap: 12px;
+}
+
+.borrow-form label {
+  display: grid;
+  gap: 4px;
+}
+
+.borrow-form input {
+  padding: 8px;
+  border: 1px solid #bbbbbb;
+}
+
+.form-preview {
+  margin-top: 20px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.book-card {
+  padding: 16px;
+  border: 1px solid #dddddd;
+}
+
+.availability {
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.available {
+  background: #e6f4ea;
+  color: #176b2c;
+}
+
+.unavailable {
+  background: #fbe9e7;
+  color: #a1261d;
+}
